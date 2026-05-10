@@ -2,7 +2,7 @@
 import { useState, useRef, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Sidebar from "@/components/layout/Sidebar";
-import { sendChat } from "../api/route";
+import { sendChat } from "@/lib/api";
 import { ChatResponse } from "@/types";
 import {
   Send,

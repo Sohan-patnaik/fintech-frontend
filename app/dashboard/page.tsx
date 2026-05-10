@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import Sidebar from "../../components/layout/Sidebar";
 import StockTicker from "../../components/ui/StockTicker";
-import { getStock,getPortfolios } from "../api/route";
+import { getStock,getPortfolios } from "@/lib/api";
 import { StockData, Portfolio } from "../../types";
 import {
   BriefcaseBusiness,

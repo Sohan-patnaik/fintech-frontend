@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import AppLayout from "@/components/layout/AppLayout";
 import { StatCard, SectionHeader,Spinner } from "@/components/ui";
-import { getPortfolios, createPortfolio, analyzePortfolio, addTransaction } from "../api/route";
+import { getPortfolios, createPortfolio, analyzePortfolio, addTransaction } from "@/lib/api";
 import { Portfolio } from "@/types";
 import { Plus, Activity, ChevronRight, X } from "lucide-react";
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from "recharts";

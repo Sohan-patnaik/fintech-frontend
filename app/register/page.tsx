@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
-import { register } from '../api/route'
+import { register } from '@/lib/api'
 import { TrendingUp } from 'lucide-react'
 
 export default function RegisterPage() {
