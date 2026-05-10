@@ -1,4 +1,5 @@
 import axios from 'axios'
+import { NextResponse } from 'next/server'  
 
 const API = axios.create({
   baseURL: process.env.NEXT_PUBLIC_API_URL,
@@ -59,5 +60,9 @@ export const addTransaction = (portfolio_id: number, data: any) =>
 
 export const getNews = (ticker: string) =>
   API.get(`/api/v1/news/${ticker}`).then((r) => r.data)
+
+export async function GET() {  
+  return NextResponse.json({ status: 'ok' })
+}
 
 export default API

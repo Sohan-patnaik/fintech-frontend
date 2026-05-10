@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { login } from "@/lib/api";
+import { login } from "../api/route";
 import { useAuthStore } from "@/store/auth";
 import { TrendingUp, Eye, EyeOff } from "lucide-react";
 

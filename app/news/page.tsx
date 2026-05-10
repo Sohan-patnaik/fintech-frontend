@@ -2,7 +2,7 @@
 import { useState } from "react";
 import AppLayout from "@/components/layout/AppLayout";
 import { SectionHeader, Spinner } from "@/components/ui";
-import { getNews } from "@/lib/api";
+import { getNews } from "../api/route";
 import { Search, ExternalLink, Newspaper } from "lucide-react";
 import { motion } from "framer-motion";
 
